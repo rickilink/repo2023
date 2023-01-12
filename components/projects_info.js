@@ -2,6 +2,7 @@ import Image from "next/image";
 
 export const projects = [
   {
+    type: "slim",
     title: "Delivery App",
     img: "/assets/image/mobile_app.gif",
     url: "https://repo2023.vercel.app",
@@ -17,19 +18,13 @@ export const projects = [
       "mobile application for a delivery based business uploaded soon to google play and AppStore ",
   },
   {
-    title: "Delivery App",
-    img: "/assets/image/mobile_app.gif",
+    type: "wide",
+    title: "Stock control system",
+    img: "/assets/image/stock_trans.png",
     url: "https://repo2023.vercel.app",
-    technologies: [
-      "tailwind",
-      "javascript",
-      "react native",
-      "redux",
-      "expo",
-      "babel",
-    ],
+    technologies: ["bootstrap", "javascript", "react", "redux", "git", "babel"],
     description:
-      "mobile application for a delivery based business uploaded soon to google play and AppStore ",
+      "Desktop application to control stock, with backend, charts and authentication implemented.  ",
   },
   {
     title: "Delivery App",
@@ -40,8 +35,8 @@ export const projects = [
       "javascript",
       "react native",
       "redux",
-      "expo",
-      "babel",
+      "node",
+      "postgreSQL",
     ],
     description:
       "mobile application for a delivery based business uploaded soon to google play and AppStore ",
