@@ -24,7 +24,7 @@ export const Projects = () => {
             className="w-screen  flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20  md:p-44 h-screen"
           >
             {project.type == "wide" ? (
-              <div>
+              <div className="flex  items-center  md:mt-32 mt-10  ">
                 <Image src={project.img} width={550} height={150} alt="image" />
               </div>
             ) : (
