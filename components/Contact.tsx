@@ -41,43 +41,44 @@ export const Contact = () => {
             <p className="text-sm md:text-lg xl:text-2xl">{contact.address}</p>
           </div>
         </div>
-
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-1 xl:space-y-2 xl:w-fit  mx-auto"
-        >
-          <div className="flex space-x-2">
+        <div className="w-[300px] md:w-[500px]">
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="flex flex-col space-y-1 xl:space-y-2 xl:w-fit  mx-auto "
+          >
+            <div className="flex space-x-1 max-w-[300px] md:max-w-[500px] items-center ">
+              <input
+                {...register("name")}
+                placeholder="Name"
+                className="contactInput w-[148px] md:w-[498px]"
+                type="text"
+              />
+              <input
+                {...register("email")}
+                placeholder="Email"
+                className="contactInput  w-[148px] md:w-[498px]"
+                type="email"
+              />
+            </div>
             <input
-              {...register("name")}
-              placeholder="Name"
-              className="contactInput xs:ml-12 xl:ml-0"
+              {...register("subject")}
+              placeholder="Subject"
+              className="contactInput "
               type="text"
             />
-            <input
-              {...register("email")}
-              placeholder="Email"
-              className="contactInput sm:mr-12 xl:mr-0"
-              type="email"
+            <textarea
+              {...register("message")}
+              placeholder="Message"
+              className="contactInput "
             />
-          </div>
-          <input
-            {...register("subject")}
-            placeholder="Subject"
-            className="contactInput sm:mx-12 md:mx-0"
-            type="text"
-          />
-          <textarea
-            {...register("message")}
-            placeholder="Message"
-            className="contactInput sm:mx-12 md:m-0"
-          />
-          <button
-            type="submit"
-            className="bg-primary-color  py-5 xl:px-10 rounded-md text-white font-bold  "
-          >
-            Submit
-          </button>
-        </form>
+            <button
+              type="submit"
+              className="bg-primary-color  py-5 xl:px-10 rounded-md text-white font-bold  "
+            >
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
