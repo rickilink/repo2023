@@ -1,10 +1,49 @@
+import Image from "next/image";
+
 export const projects = [
   {
-    title: "Lorem ipsum dolor sit amet consectetur",
-    img: "https://avatars.githubusercontent.com/u/94920636?v=4",
-    url: "https://www.vercel.com",
-    technologies: ["tailwind", "javascript", "react native"],
+    title: "Delivery App",
+    img: "/assets/image/mobile_app.gif",
+    url: "https://repo2023.vercel.app",
+    technologies: [
+      "tailwind",
+      "javascript",
+      "react native",
+      "redux",
+      "expo",
+      "babel",
+    ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos suscipit repudiandae quasi culpa nostrum in.Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos suscipit repudiandae quasi culpa nostrum in.",
+      "mobile application for a delivery based business uploaded soon to google play and AppStore ",
+  },
+  {
+    title: "Delivery App",
+    img: "/assets/image/mobile_app.gif",
+    url: "https://repo2023.vercel.app",
+    technologies: [
+      "tailwind",
+      "javascript",
+      "react native",
+      "redux",
+      "expo",
+      "babel",
+    ],
+    description:
+      "mobile application for a delivery based business uploaded soon to google play and AppStore ",
+  },
+  {
+    title: "Delivery App",
+    img: "/assets/image/mobile_app.gif",
+    url: "https://repo2023.vercel.app",
+    technologies: [
+      "tailwind",
+      "javascript",
+      "react native",
+      "redux",
+      "expo",
+      "babel",
+    ],
+    description:
+      "mobile application for a delivery based business uploaded soon to google play and AppStore ",
   },
 ];

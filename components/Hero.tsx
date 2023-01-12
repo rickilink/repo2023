@@ -11,9 +11,8 @@ export default function Hero({}: Props) {
   let mainColor = "#FCA466";
   const [text, count] = useTypewriter({
     words: ["Hi, I'm Cristobal", "Welcome to my Portfolio", "Enjoy 😊  "],
-
+    loop: true,
     deleteSpeed: 40,
-
     delaySpeed: 500,
   });
   return (
@@ -36,9 +35,9 @@ export default function Hero({}: Props) {
           <Link href="#About">
             <button className="heroButton">About</button>
           </Link>
-          <Link href="#Experience">
+          {/* <Link href="#Experience">
             <button className="heroButton">Experience</button>
-          </Link>
+          </Link> */}
           <Link href="#Skills">
             <button className="heroButton">Skills</button>
           </Link>
