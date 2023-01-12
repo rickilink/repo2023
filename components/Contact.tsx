@@ -16,8 +16,10 @@ type Inputs = {
 };
 export const Contact = () => {
   const { register, handleSubmit } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (formData) => console.log(formData); //TODO: handle form data
-  /* window.location.href= `mailto:cristobalmatute@mail.com?subject=${formData.subject}&body=hi,my name is ${formData.name} and  ${formData.messahe}` */
+  const onSubmit: SubmitHandler<Inputs> = (formData) =>
+    window.location.replace(
+      `mailto:${contact.myMail}?subject=${formData.subject}&body=hi,my name is ${formData.name} and  ${formData.message}`
+    );
 
   return (
     <div className="h-screen relative flex overflow-hidden flex-col text-left  md:flex-row max-w-full justify-evenly mx-auto items-center z-0">

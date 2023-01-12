@@ -1,5 +1,6 @@
 export const contact = {
-  phone: "+1 999 999 999",
-  email: "mail@mail.com",
-  address: "Lorem , Ipsum - Lor",
+  phone: "+51 938 874 790",
+  email: "cristobalmatu7@gmail.com",
+  address: "Ica , Ica - Peru",
+  myMail: "cristobalmatu7@gmail.com",
 };
