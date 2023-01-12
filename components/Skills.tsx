@@ -22,6 +22,7 @@ export const Skills = (props: Props) => {
       <motion.div className="grid grid-cols-3  md:grid-cols-5  max-h-[400px] px-5    gap-5  overflow-y-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-primary-color/80">
         {skill.map((sk, i) => (
           <motion.div
+            key={i}
             initial={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.5, x: 0, delay: 0 + i / 9 }}
             animate={{ opacity: 1 }}

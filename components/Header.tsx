@@ -28,7 +28,7 @@ export const Header = (props: Props) => {
       >
         {social.map((so) =>
           so.network ? (
-            <div>
+            <div key={so.id}>
               <SocialIcon
                 network={so.network}
                 url={so.url}
@@ -37,7 +37,7 @@ export const Header = (props: Props) => {
               />
             </div>
           ) : (
-            <div>
+            <div key={so.id}>
               <SocialIcon
                 url={so.url}
                 fgColor={so.color}

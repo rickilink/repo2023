@@ -29,9 +29,9 @@ export const ExperienceCard = (props: Props) => {
           {props.company}
         </p>
         <div className="flex space-x-2  justify-center">
-          {props.technologies?.map((tec) => {
-            return techLogos.get(tec);
-          })}
+          {props.technologies?.map((tec, i) => (
+            <div key={i}>{techLogos.get(tec)}</div>
+          ))}
         </div>
         <p className="uppercase text-sm py-1 md:py-5 xl:py-1 text-gray-300 ">
           started <span>{props.dateStart}</span> - ended{" "}
@@ -39,8 +39,8 @@ export const ExperienceCard = (props: Props) => {
         </p>
 
         <ul className="list-disc space-y-2 ml-2 text-sm max-h-[200px] p-5 xl:space-y-1 xl:ml-1 xl:text-ms overflow-y-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-primamry-color/80 2xl:justify-center  ">
-          {props.summary.map((el) => (
-            <li>{el}</li>
+          {props.summary.map((el, i) => (
+            <li key={i}>{el}</li>
           ))}
         </ul>
       </div>
