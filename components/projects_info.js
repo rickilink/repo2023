@@ -26,7 +26,7 @@ export const projects = [
     description:
       "Desktop application to control stock, with backend, charts and authentication implemented.  ",
   },
-  {
+  /* {
     title: "Delivery App",
     img: "/assets/image/mobile_app.gif",
     url: "https://repo2023.vercel.app",
@@ -40,5 +40,5 @@ export const projects = [
     ],
     description:
       "mobile application for a delivery based business uploaded soon to google play and AppStore ",
-  },
+  }, */
 ];
