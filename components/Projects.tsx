@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 import { projects } from "./projects_info";
 import { techLogosBig, techLogos } from "./technologiesComponents";
 import { Skill, SkillSmall } from "./Skill";
+import {
+  ChevronDoubleDownIcon,
+  ChevronDoubleLeftIcon,
+  ChevronDoubleRightIcon,
+} from "@heroicons/react/24/solid";
+
 import Image from "next/image";
 
 export const Projects = () => {
@@ -24,7 +30,7 @@ export const Projects = () => {
             className="w-screen  flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20  md:p-44 h-screen"
           >
             {project.type == "wide" ? (
-              <div className="flex  items-center  md:mt-32 mt-10  ">
+              <div className="flex  items-center  md:mt-32 mt-10   ">
                 <Image src={project.img} width={550} height={150} alt="image" />
               </div>
             ) : (
@@ -47,10 +53,14 @@ export const Projects = () => {
 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl ">
               <h4 className=" text-sm md:text-lg xl:text-4xl  text-center ">
-                Case Study {i + 1} of {projects.length}:{" "}
-                <span className="underline decoration-[#FCA466]/50 uppercase font-semibold">
+                {i + 1} of {projects.length}:{" "}
+                <a
+                  href={project.url}
+                  target="_blank"
+                  className="underline decoration-[#FCA466]/50 uppercase font-semibold hover:text-primary-color"
+                >
                   {project.title}
-                </span>
+                </a>
               </h4>
               <p className="text-sm text-center md:text-lg md:text-left">
                 {project.description}
@@ -76,7 +86,28 @@ export const Projects = () => {
           </div>
         ))}
       </div>
-      <div className="w-full absolute top-[30%] bg-primary-color/10 left-0 h-[250px] -skew-y-12" />
+      <div className="w-full absolute top-0 bg-primary-color/10 left-0 h-[250px] -skew-y-12" />
+      <motion.div
+        initial={{
+          opacity: 0,
+          x: -200,
+        }}
+        animate={{
+          opacity: [0, 0.5, 0.5, 0],
+          x: [0, -50, -50, +50],
+        }}
+        transition={{
+          duration: 1,
+          delay: 0.5,
+          repeat: 1,
+          repeatDelay: 6,
+        }}
+        className="absolute right-0 w-60 h-30  flex flex-row  items-center  justify-center  "
+      >
+        <ChevronDoubleRightIcon className=" text-primary-color/50" />
+
+        <ChevronDoubleRightIcon className=" text-primary-color/50" />
+      </motion.div>
     </motion.div>
   );
 };
