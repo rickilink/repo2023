@@ -18,9 +18,13 @@ import {
   SiExpo,
   SiMongodb,
   SiPostgresql,
+  SiMysql,
+  SiRailway,
+  SiVercel,
+  SiAndroid,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
-import { FaGitAlt } from "react-icons/fa";
+import { FaGitAlt, FaApple } from "react-icons/fa";
 
 const logos = {
   javascript: <IoLogoJavascript />,
@@ -41,6 +45,11 @@ const logos = {
   expo: <SiExpo />,
   mongodb: <SiMongodb />,
   postgreSQL: <SiPostgresql />,
+  mySQL: <SiMysql />,
+  vercel: <SiVercel />,
+  railway: <SiRailway />,
+  android: <SiAndroid />,
+  ios: <FaApple />,
 };
 export const techLogos = new Map(Object.entries(logos));
 
@@ -63,6 +72,11 @@ const logosBig = {
   expo: <SiExpo className="iconsBigTechnology" />,
   mongodb: <SiMongodb className="iconsBigTechnology" />,
   postgreSQL: <SiPostgresql className="iconsBigTechnology" />,
+  mySQL: <SiMysql className="iconsBigTechnology" />,
+  vercel: <SiVercel className="iconsBigTechnology" />,
+  railway: <SiRailway className="iconsBigTechnology" />,
+  android: <SiAndroid className="iconsBigTechnology" />,
+  ios: <FaApple className="iconsBigTechnology" />,
 };
 
 export const techLogosBig = new Map(Object.entries(logosBig));

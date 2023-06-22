@@ -10,9 +10,8 @@ type Props = {};
 export default function Hero({}: Props) {
   let mainColor = "#FCA466";
   const [text, count] = useTypewriter({
-    words: ["Hi, I'm Cristobal", "Welcome to my Portfolio", "Enjoy 😊  "],
-    loop: true,
-    deleteSpeed: 40,
+    words: ["Hi, I'm Cristobal", "Welcome to my Portfolio"],
+
     delaySpeed: 500,
   });
   return (
@@ -61,7 +60,7 @@ export default function Hero({}: Props) {
         }}
         transition={{
           duration: 1,
-          delay: 1,
+          delay: 6,
           repeat: 1,
           repeatDelay: 6,
         }}

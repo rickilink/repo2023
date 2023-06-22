@@ -2,5 +2,5 @@ export const about = {
   image: "https://avatars.githubusercontent.com/u/94920636?v=4",
   title: "Here is a little Background",
   description:
-    "Dedicated and efficient full stack developer with 2+ years experience in application web, mobile and databases. Specialized in MERN Stack and beyond, increasing effectiveness of my products for the customers all around the globe. Seeking to sharpen my skills to become the best developer. ",
+    "I am a passionate and experienced full stack developer specializing in the MERN stack. With a strong background in JavaScript, React, Node.js, and MongoDB, I have successfully designed and implemented various web applications. My expertise extends to both frontend and backend development, and I thrive in agile environments, collaborating with cross-functional teams to deliver high-quality and user-friendly solutions. ",
 };
