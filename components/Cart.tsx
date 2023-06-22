@@ -61,11 +61,13 @@ const Cart: React.FC<CartProps> = ({ project }) => {
             {project.technologies.map((tec, i) => (
               <div
                 key={i}
-                className="relative group animate-pulse"
+                className={`relative group `}
                 onMouseEnter={() => handleMouseEnter(tec)}
                 onMouseLeave={handleMouseLeave}
               >
-                {techLogos.get(tec)}
+                <span className={`animate-pulse delay-${i + 50}s`}>
+                  {techLogos.get(tec)}
+                </span>
                 {tooltipText === tec && (
                   <div className="absolute bottom-full left-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded-lg transform -translate-x-1/2 opacity-0 group-hover:opacity-100">
                     {tec}
