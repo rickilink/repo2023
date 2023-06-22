@@ -17,7 +17,7 @@ interface CartProps {
 const Cart: React.FC<CartProps> = ({ project }) => {
   const [tooltipText, setTooltipText] = useState("");
 
-  const handleMouseEnter = (value) => {
+  const handleMouseEnter = (value: string) => {
     setTooltipText(value);
   };
 
