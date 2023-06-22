@@ -35,7 +35,7 @@ const Cart: React.FC<CartProps> = ({ project }) => {
       <img
         src={project.img}
         alt={project.title}
-        className="object-cover rounded-t-md "
+        className="object-center rounded-t-md "
         style={{ width: "800px", height: "380px" }}
       />
 
