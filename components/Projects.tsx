@@ -58,7 +58,7 @@ export const Projects: React.FC = () => {
         </motion.div>
         <button
           onClick={handleNextClick}
-          className=" px-3 py-1 rounded-xl font-extralight animate-pulse border-2 border-primary-color"
+          className="px-3 py-1 rounded-xl font-extralight animate-pulse border-2 border-primary-color"
         >
           Next
         </button>
