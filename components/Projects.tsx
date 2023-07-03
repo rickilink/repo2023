@@ -37,14 +37,14 @@ export const Projects: React.FC = () => {
   };
 
   return (
-    <div className="h-screen relative flex flex-col text-left max-w-full justify-evenly mx-auto items-center z-0">
+    <div className="min-h-screen relative flex flex-col text-left max-w-full justify-evenly mx-auto items-center z-0">
       <h3 className="absolute uppercase tracking-[10px] md:tracking-[20px] text-gray-500 top-12 xl:top-10 md:text-lg text-sm xl:text-xl md:top-20">
         Projects
       </h3>
 
-      <div className="w-full flex items-center justify-center space-x-3 pt-10">
+      <div className="w-full flex flex-wrap items-center justify-center space-x-3 pt-10">
         <button
-          className="z-10  px-3 py-1 rounded-xl font-extralight animate-pulse border-2 border-primary-color"
+          className="z-10 px-3 py-1 rounded-xl font-extralight animate-pulse border-2 border-primary-color"
           onClick={handlePrevClick}
         >
           Prev
@@ -53,6 +53,7 @@ export const Projects: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+          className="w-full md:w-auto"
         >
           <Cart project={projects[currentIndex]} />
         </motion.div>
