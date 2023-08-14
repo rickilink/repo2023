@@ -1,7 +1,7 @@
 export const experience = [
 {
     image: "https://avatars.githubusercontent.com/u/94920636?v=4",
-    title: "Full Stack Developer",
+    title: "Fullstack Developer",
     company: "Locations",
     technologies: ["javascript", "react native", "mongodb", "tailwind","redux", "expo", "git", "java", "android"],
     dateStart: "09/01/2022",
