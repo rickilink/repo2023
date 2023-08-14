@@ -10,7 +10,7 @@ export const Experience = (props: Props) => {
       <h3 className="absolute top-12 uppercase tracking-[10px] md:tracking-[15px] text-gray-500  text-sm md:text-lg md:top-15 xl:text-xl xl:top-10">
         Experience{" "}
       </h3>
-      <div className="w-full flex  space-x-2 md:max-h-[500px] xl:max-h-[600px] xl:space-x-5 xl:min-h-[400px] overflow-x-scroll pt-5 xl:p-10 xl:mt-12 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-primary-color/80 2xl:justify-center">
+      <div className="w-full flex  space-x-2  xl:space-x-5 md:pt-24  overflow-x-scroll snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-primary-color/80 2xl:justify-center md:items-center md:justify-center">
         {experience?.map((exp, i) => (
           <motion.div
             key={i}

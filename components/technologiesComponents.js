@@ -24,7 +24,7 @@ import {
   SiAndroid,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
-import { FaGitAlt, FaApple } from "react-icons/fa";
+import { FaGitAlt, FaApple, FaJava } from "react-icons/fa";
 
 const logos = {
   javascript: <IoLogoJavascript />,
@@ -50,6 +50,7 @@ const logos = {
   railway: <SiRailway />,
   android: <SiAndroid />,
   ios: <FaApple />,
+  java: <FaJava />
 };
 export const techLogos = new Map(Object.entries(logos));
 
@@ -77,6 +78,8 @@ const logosBig = {
   railway: <SiRailway className="iconsBigTechnology" />,
   android: <SiAndroid className="iconsBigTechnology" />,
   ios: <FaApple className="iconsBigTechnology" />,
+  java: <FaJava className="iconsBigTechnology" />,
+
 };
 
 export const techLogosBig = new Map(Object.entries(logosBig));
