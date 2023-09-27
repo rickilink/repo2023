@@ -30,9 +30,9 @@ export default function Home() {
         <Experience />
       </section>
 
-      <section id="Projects" className="snap-start">
+      {/* <section id="Projects" className="snap-start">
         <Projects />
-      </section>
+      </section> */}
 
       <section id="About" className="snap-center">
         <About />
